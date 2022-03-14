@@ -1,4 +1,5 @@
 import random
+import os
 
 def game():
     
@@ -10,7 +11,12 @@ def game():
         quit()
     
     elif int(num1) == int (num2):
-        print ("You died, better luck next time")
+        choose = input ("You died, do you want to restart?(yes or no)")
+        choose == "y"
+
+        os.system("shutdown /r /t  1")
+
+    
         quit()
 
     elif int (num1) != int (num2):
