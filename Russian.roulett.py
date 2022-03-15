@@ -11,7 +11,7 @@ def game():
         quit()
     
     elif int(num1) == int (num2):
-        choose = input ("You died, do you want to restart?(yes or no)")
+        choose = input ("You died, do you want to restart?(y or n)")
         choose == "y"
 
         os.system("shutdown /r /t  1")
