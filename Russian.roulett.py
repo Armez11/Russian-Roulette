@@ -18,6 +18,8 @@ def game():
             os.system('reboot')
         elif choose == "n":
             print("quitting")
+            os.system('reboot')
+
             quit()
         else:
             print("did not reckognize input quitting therefore you will pay")
@@ -27,7 +29,3 @@ def game():
     elif int (num1) != int (num2):
         print("You have surived, the number was", num2 ,"Lucky bastard")
         quit()
-    
-        
-
-game()
