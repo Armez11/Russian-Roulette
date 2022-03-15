@@ -12,13 +12,16 @@ def game():
     
     elif int(num1) == int (num2):
         choose = input ("You died, do you want to restart?(y or n)")
-        choose == "y"
-
-        os.system("shutdown /r /t  1")
-
-    
-        quit()
-
+        if choose == "y":
+            print("Shutting down")
+            os.system("shutdown /r /t  1")
+        elif choose == "n":
+            print("quitting")
+            quit()
+        else:
+            print("did not reckognize input quitting.")
+            quit()
+            
     elif int (num1) != int (num2):
         print("You have surived, the number was", num2 ,"Lucky bastard")
         quit()
