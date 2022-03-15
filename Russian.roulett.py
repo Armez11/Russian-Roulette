@@ -1,6 +1,6 @@
 import random
 import os
-os.system('reboot')
+
 
 def game():
     
@@ -15,7 +15,7 @@ def game():
         choose = input ("You died, do you want to restart?(y or n)")
         if choose == "y":
             print("Shutting down")
-            os.system("shutdown /r /t  1")
+            os.system('reboot')
         elif choose == "n":
             print("quitting")
             quit()
