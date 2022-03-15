@@ -8,9 +8,9 @@ def game():
         quit()
     if int(num1) == int(num2):
        choose = input("you have died, do you want to try again (Y or N)")
-       if choose == "y":
+       if choose == "y" or "Y":
              print ("restarting...")
              quit()
     elif int(num1) != int(num2):
-        print ("you won, the number was ", num2)
+        print ("you survived, the number was ", num2 , "lucky bastard")
 game()
